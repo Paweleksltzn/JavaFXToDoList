@@ -1,0 +1,37 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:controller="com.pawelAntolak.todoList.Controller"
+            xmlns:fx="http://javafx.com/fxml" >
+    <left>
+        <ListView fx:id="toDoListView">
+
+        </ListView>
+    </left>
+    <center>
+        <VBox>
+            <TextArea fx:id="details" VBox.vgrow="ALWAYS"/>
+            <HBox style="-fx-background-color:white">
+                <Label text="Due: " >
+                    <font>
+                        <Font name="Times New Roman bold" size="40"/>
+                    </font>
+                </Label>
+                <Label fx:id="deadlineLabel" >
+                    <font>
+                        <Font name="Times New Roman bold" size="40"/>
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+
+    </center>
+</BorderPane>
