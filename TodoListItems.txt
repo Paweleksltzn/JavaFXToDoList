@@ -4,3 +4,6 @@ Finish designt proposal for client	I promised Mike I will make a website for him
 Pickup Doug at the train station	Dought is arriving on March 23 one the 5:00 train	23-03-2016	
 Pickup dry cleaning	The clothes should be raedy on Wednesday	20-04-2016	
 sada	dsadassdas	02-08-2018	
+My new to do item	This is a new to do item	24-08-2018	
+Test	testing if everything work	22-08-2018	
+Observable works	Testing if works	09-08-2018	

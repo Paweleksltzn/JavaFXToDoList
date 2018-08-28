@@ -8,7 +8,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class DialogController {
     @FXML
@@ -18,10 +17,13 @@ public class DialogController {
     @FXML
     private DatePicker deadlinePicker;
 
-    public void processResult() {
+    public ToDoItem processResult() {
         String shortDescription = shortDescriptionField.getText().trim();
         String details = detailsArea.getText().trim();
         LocalDate date = deadlinePicker.getValue();
-        ToDoData.getInstance().addToDoItem(new ToDoItem(shortDescription,details,date));
+
+        ToDoItem newItem = new ToDoItem(shortDescription,details,date);
+        ToDoData.getInstance().addToDoItem(newItem);
+        return newItem;
     }
 }
