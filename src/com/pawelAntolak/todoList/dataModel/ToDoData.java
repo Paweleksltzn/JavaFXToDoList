@@ -39,6 +39,9 @@ public class ToDoData {
     public void addToDoItem(ToDoItem item) {
         toDoItems.add(item);
     }
+    public void deleteToDoItem(ToDoItem item) {
+        toDoItems.remove(item);
+    }
     public void loadTodoItems() throws IOException {
 
         toDoItems = FXCollections.observableArrayList();
